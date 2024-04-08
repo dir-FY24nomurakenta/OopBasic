@@ -14,6 +14,7 @@ public class ObjectSample {
         
         //1行空ける
         System.out.println("");
+     
         
         // インスタンスの作成
         var devDepartment = new Department("開発部", "yy", 0);
@@ -37,6 +38,20 @@ public class ObjectSample {
             
         }
         // ------追記 （ここまで） ------    
+    // -----追記（ここから） ------
+    // 一行空ける
+    System.out.println("");
+    
+    //アルバイトインスタンスの作成
+    var parttimeWorker = new ParttimeWorker("太田", department);
+    
+    // 実装したメソッドの呼び出し
+    ((Workable) employee).work();
+    ((Workable) engineer).work();
+    ((Workable) projectManager).work();
+    ((Workable) parttimeWorker).work();
+    // ------ 追記（ここまで） ------
+   
     }
-
+    
 }
